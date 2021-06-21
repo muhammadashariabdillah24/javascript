@@ -106,10 +106,52 @@ function panggil() {
         type : 'Honda',
         harga : 50000000,
         warna : 'Merah',
+        tahun : [[1999, 2000, 2001, 2002, 2003, 2004, 2005],
+                 [2006, 2007, 2008, 2009, 2010, 2011, 2012],
+                  [2013, 2014, 2015, 2016, 2017, 2018, 2019]]
     }
 
-    console.log(motor)
-    console.log(motor.harga)
+    let mobil = {
+        type : 'Honda Mobilio',
+        harga : 600000000,
+        warna : 'Hitam',
+        tahun : [[2000, 2001, 2002, 2003, 2004, 2005, 2006],
+                  [2007, 2008, 2009, 2010, 2011, 2012, 2013],
+                   [2014, 2015, 2016, 2017, 2018, 2019, 2020]]
+    }
+    
+    let sayuran = {
+        nama : 'Bayam',
+        warna : 'Hijau',
+        bentuk : 'Lentur',
+        harga : [[2000, 4000, 6000, 8000, 10000, 12000, 14000, 16000],
+                  [18000, 20000, 22000, 24000, 26000, 28000, 30000],
+                   [32000, 34000, 36000, 38000, 40000, 42000, 44000]]
+    }
+
+    let buah = {
+        nama : 'Apel',
+        warna : 'Merah',
+        bentuk : 'Bulat Dan Padat',
+        harga : [[1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000],
+                  [9000, 10000, 11000, 12000, 13000, 14000, 15000],
+                   [16000, 17000, 18000, 19000, 20000, 21000, 22000]]
+    }
+
+    // console.log('Objek Motor : ' , motor.type)
+    // console.log('Objek Mobil : ', mobil.warna)
+    // console.log('Objek Sayuran : ', sayuran.nama)
+    // console.log('Objek Buah' , buah.bentuk)
+
+    let hasil_mobil = mobil.tahun[0][1];
+    let hasil_motor = motor.tahun[1][2];
+    let hasil_sayuran = sayuran.harga[2][3];
+    let hasil_buah = buah.harga[0][4];
+
+    console.log(hasil_mobil);
+    console.log(hasil_motor);
+    console.log(hasil_sayuran);
+    console.log(hasil_buah);
 }
 
 panggil();
