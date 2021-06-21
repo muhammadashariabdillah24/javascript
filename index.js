@@ -57,21 +57,59 @@
 //     }
 // }
 
-function dataArray() {
+// function dataArray() {
 
-    let dataArr = [['Melon', 'Semangka', 'Jeruk'],
-                    ['Tomat', 'Bayam', 'Cabe'],
-                     ['Sepeda', 'Mobil', 'Motor']];
+//     let dataArr = [['Melon', 'Semangka', 'Jeruk'],
+//                     ['Tomat', 'Bayam', 'Cabe'],
+//                      ['Sepeda', 'Mobil', 'Motor']];
 
-    console.log(dataArr[0]);
-    console.log(dataArr[0][0] , ' Adalah buah terenak');
-    console.log(dataArr[1]);
-    console.log(dataArr[1][1] , ' Adalah sayuran terenak');
-    console.log(dataArr[2]);
-    console.log(dataArr[2][2] , ' Adalah kendaraan terbaik');
+    // console.log(dataArr[0]);
+    // console.log(dataArr[0][0] , ' Adalah buah terenak');
+    // console.log(dataArr[1]);
+    // console.log(dataArr[1][1] , ' Adalah sayuran terenak');
+    // console.log(dataArr[2]);
+    // console.log(dataArr[2][2] , ' Adalah kendaraan terbaik');
+
+    // for (let i = 0; i < dataArr.length; i++) {
+    //     console.log(dataArr[2][i]);
+    // }
+
     
+
+    // for (let i of dataArr[0]) {
+    //     console.log(i);
+    // }
+
+    // let a = 1
+    // while (dataArr) {
+    //     console.log(dataArr[2][a]);
+    //     a++;
+    // }
+
+    
+//}
+
+// dataArray();
+
+// let t_badan = [150, 170, 180, 190, 210, 220, 230];
+
+//  for (let i of t_badan) {
+//      console.log(i , ' Array For Of');
+//  }
+
+// for (let i = 0; i < t_badan.length; i++) {
+//     console.log(t_badan[i]);
+// }
+
+function panggil() {
+    let motor = {
+        type : 'Honda',
+        harga : 50000000,
+        warna : 'Merah',
+    }
+
+    console.log(motor)
+    console.log(motor.harga)
 }
 
-dataArray();
-
-
+panggil();
